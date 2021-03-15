@@ -1,0 +1,26 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  visibility: hidden;
+  border: 1px solid black;
+}
+li {
+  text-align: center;
+  list-style: none;
+}
+li:hover {
+  background-color: yellow;
+  cursor: pointer;
+}
+
+.show {
+  visibility: visible;
+}

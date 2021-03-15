@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="test" method="get">
+      <fieldset class="fruit">
+        <legend>과일</legend>
+        <input type="checkbox" name="fruit1" value="apple" checked /><span
+          >apple</span
+        >
+        <input type="checkbox" name="fruit2" value="banana" /><span
+          >banana</span
+        >
+        <input type="checkbox" name="fruit3" value="grape" /><span>grape</span>
+      </fieldset>
+      <fieldset class="gender">
+        <legend>성별</legend>
+        <input type="radio" name="gender" value="male" checked /> 남자<br />
+        <input type="radio" name="gender" value="female" /> 여자<br />
+      </fieldset>
+      <fieldset class="city">
+        <legend>도시</legend>
+        <select name="city">
+          <option value="서울" selected>서울</option>
+          <option value="광주">광주</option>
+          <option value="부산">부산</option>
+        </select>
+      </fieldset>
+      <fieldset class="description">
+        <legend>설명</legend>
+        <textarea name="description"></textarea>
+      </fieldset>
+      <div class="result"></div>
+    </form>
+    <script src="./index.js"></script>
+  </body>
+</html>

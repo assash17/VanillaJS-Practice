@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.impossible {
+  background-color: red;
+}
+.selected {
+  background-color: aqua;
+}
+.empty {
+  background-color: darkgrey;
+}
+
+.legend {
+}
+.legend__row {
+  display: flex;
+}
+.legend__row div {
+  width: 25px;
+  height: 25px;
+  margin: 2px;
+}
+
+.hall__row {
+  display: flex;
+}
+.hall__row div {
+  width: 25px;
+  height: 25px;
+  margin: 2px;
+}

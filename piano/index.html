@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      .press {
+        background-color: red;
+        font-size: 20px;
+      }
+      #pianoBox {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .key {
+        margin: 20px;
+        transition: all 0.2s;
+      }
+      #songList {
+        margin-top: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="pianoBox">
+      <div>
+        <span class="key" data-key="a">도(a)</span>
+        <span class="key" data-key="s">레(s)</span>
+        <span class="key" data-key="d">미(d)</span>
+        <span class="key" data-key="f">파(f)</span>
+        <span class="key" data-key="g">솔(g)</span>
+        <span class="key" data-key="h">라(h)</span>
+        <span class="key" data-key="j">시(j)</span>
+        <span class="key" data-key="k">도(k)</span>
+      </div>
+      <div id="songList">
+        <button id="school">학교종이땡땡땡</button>
+        <button id="same">똑같아요</button>
+      </div>
+    </div>
+    <audio data-key="a" src="./resource/1.mp3" hidden></audio>
+    <audio data-key="s" src="./resource/2.mp3" hidden></audio>
+    <audio data-key="d" src="./resource/3.mp3" hidden></audio>
+    <audio data-key="f" src="./resource/4.mp3" hidden></audio>
+    <audio data-key="g" src="./resource/5.mp3" hidden></audio>
+    <audio data-key="h" src="./resource/6.mp3" hidden></audio>
+    <audio data-key="j" src="./resource/7.mp3" hidden></audio>
+    <audio data-key="k" src="./resource/8.mp3" hidden></audio>
+    <script src="./index.js"></script>
+  </body>
+</html>
