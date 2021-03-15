@@ -4,7 +4,6 @@ const pages = [
   "infinity-scroll",
   "filtering",
   "routing",
-  "todo-list",
   "click-game",
   "input-example",
   "ajax",

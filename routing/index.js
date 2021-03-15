@@ -12,8 +12,8 @@ menu.addEventListener("click", (e) => {
 
   e.preventDefault();
   const path = e.target.getAttribute("href").replace("/", "");
-
   history.pushState(path, path, path);
+
   render(path);
 });
 
