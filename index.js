@@ -13,6 +13,7 @@ const pages = [
   "movie-reservation",
   "custom-video-player",
   "exchange-rate",
+  "dom-array",
 ];
 const menu = document.getElementById("menu");
 const temp = new DocumentFragment();
