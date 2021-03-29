@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        height: 100vh;
+        margin: 0;
+        transition: transform 0.3s ease;
+      }
+      nav {
+        border-right: 1px solid black;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 200px;
+        height: 100vh;
+        z-index: 100;
+        transform: translateX(-100%);
+      }
+      .show {
+        transform: translateX(200px);
+        width: calc(100% - 200px);
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>메뉴1</li>
+        <li>메뉴2</li>
+        <li>메뉴3</li>
+      </ul>
+    </nav>
+    <div id="box">
+      <header>
+        <button class="btn-toggle-menu">></button>
+        <h1>Header</h1>
+      </header>
+      <main><h2>main</h2></main>
+    </div>
+    <script>
+      document
+        .querySelector(".btn-toggle-menu")
+        .addEventListener("click", (e) => {
+          document.querySelector("body").classList.toggle("show");
+          if (e.target.textContent === ">") {
+            e.target.textContent = "<";
+          } else {
+            e.target.textContent = ">";
+          }
+        });
+    </script>
+  </body>
+</html>

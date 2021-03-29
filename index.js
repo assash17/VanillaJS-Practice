@@ -14,6 +14,7 @@ const pages = [
   "custom-video-player",
   "exchange-rate",
   "dom-array",
+  "hamburger-menu",
 ];
 const menu = document.getElementById("menu");
 const temp = new DocumentFragment();
