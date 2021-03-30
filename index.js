@@ -15,6 +15,7 @@ const pages = [
   "exchange-rate",
   "dom-array",
   "hamburger-menu",
+  "hangman",
 ];
 const menu = document.getElementById("menu");
 const temp = new DocumentFragment();
